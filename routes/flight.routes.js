@@ -152,7 +152,7 @@ const flightRouter = express.Router();
 
 
 
-flightRouter.get('/api/flights',async(req,res)=>{
+flightRouter.get('/api/flight',async(req,res)=>{
     try {
         const flights = await Flight.find();
         res.status(200).json(flights);

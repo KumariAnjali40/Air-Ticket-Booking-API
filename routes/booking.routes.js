@@ -154,21 +154,6 @@ const bookingRouter = express.Router();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //post booking ..
 bookingRouter.post('/api/booking', auth, async (req, res) => {
     try {
