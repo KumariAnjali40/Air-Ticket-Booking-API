@@ -6,6 +6,81 @@ const jwt=require('jsonwebtoken');
 
 const userRouter=express.Router();
 
+
+/**
+ * @swagger
+ * tags:
+ *   name: Users
+ *   description: Operations related to users
+ */
+
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     User:
+ *       type: object
+ *       properties:
+ *         id:
+ *           type: string
+ *           description: The auto-generated id of the user
+ *         name:
+ *           type: string
+ *           description: The user name
+ *         email:
+ *           type: string
+ *           description: The user email
+ *         age:
+ *           type: integer
+ *           description: The user age
+ */
+
+/**
+ * @swagger
+ * /users/api/register:
+ *   post:
+ *     summary: Register a new user
+ *     tags: [Users]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/User'
+ *     responses:
+ *       200:
+ *         description: User registered successfully
+ *       400:
+ *         description: Bad Request
+ */
+
+/**
+ * @swagger
+ * /users/api/login:
+ *   post:
+ *     summary: Login as an existing user
+ *     tags: [Users]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               email:
+ *                 type: string
+ *               password:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Login successful, returns JWT token
+ *       400:
+ *         description: Bad Request
+ */
+
+
+
+
 //user register
 userRouter.post('/api/register',(req,res)=>{
     const {name,email,password}=req.body;

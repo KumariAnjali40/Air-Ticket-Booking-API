@@ -9,7 +9,7 @@ const auth=async(req,res,next)=>{
       //   console.log(decoded);
         req.body.userID=decoded.userID
         req.body.name=decoded.user
-        next();
+        next();or 
       }else{
         res.json({msg:"not authorized"});
       }
