@@ -6,3 +6,8 @@
 6. GET /bookings/api/dashboard - Get user bookings (Protected).
 7. PUT /bookings/api/dashboard/:id - Update a booking (Protected).
 8. DELETE /bookings/api/dashboard/:id - Delete a booking (Protected).
+
+
+"Deployed Link " : https://revisionariticketbooking.onrender.com/
+
+"swagger link" : http://localhost:4500/apidocs/#/
