@@ -19,7 +19,7 @@ flightRouter.get('/api/flights',async(req,res)=>{
 
 //get flight by id 
 
-flightRouter.get('/:id', async (req, res) => {
+flightRouter.get('/api/flight/:id', async (req, res) => {
     try {
       const flight = await Flight.findById(req.params.id);
       if (!flight) return res.status(404).send('Flight not found');
