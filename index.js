@@ -31,6 +31,7 @@ const options={
 }
 
 const openApiSpec=swaggerJsDoc(options);
+
 app.use('/apidocs',swaggerUi.serve,swaggerUi.setup(openApiSpec));
 
 app.get('/',(req,res)=>{

@@ -42,7 +42,7 @@ const flightRouter = express.Router();
 
 /**
  * @swagger
- * /flights/api/flights:
+ * /flights/api/flight:
  *   get:
  *     summary: Get all flights
  *     tags: [Flights]
