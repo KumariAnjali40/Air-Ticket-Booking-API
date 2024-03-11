@@ -10,4 +10,4 @@
 
 "Deployed Link " : https://revisionariticketbooking.onrender.com/
 
-"swagger link" : http://localhost:4500/apidocs/#/
+"Swagger API Document link" : http://localhost:4500/apidocs/#/
