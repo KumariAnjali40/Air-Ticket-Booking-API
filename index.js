@@ -1,5 +1,6 @@
 const express = require('express');
 const {connection}=require('./db');
+const {flightRouter}=require('./routes/flight.routes')
 const {userRouter} = require('./routes/user.routes');
 const app=express();
 
@@ -7,6 +8,7 @@ const app=express();
 app.use(express.json());
 
 app.use("/users",userRouter);
+app.use("/flights",flightRouter)
 
 app.get('/',(req,res)=>{
     res.send("hello");

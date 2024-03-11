@@ -7,7 +7,7 @@ const jwt=require('jsonwebtoken');
 const userRouter=express.Router();
 
 //user register
-userRouter.post('/register',(req,res)=>{
+userRouter.post('/api/register',(req,res)=>{
     const {name,email,password}=req.body;
 
     try{
@@ -28,7 +28,7 @@ userRouter.post('/register',(req,res)=>{
 })
 
 //login
-userRouter.post('/login',async(req,res)=>{
+userRouter.post('/api/login',async(req,res)=>{
     const {email,password}=req.body;
     try{
        const user = await User.findOne({email});
