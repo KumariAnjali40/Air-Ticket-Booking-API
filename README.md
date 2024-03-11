@@ -1,3 +1,12 @@
+Air Ticket Booking API Documentation
+Welcome to FlightHub, your all-in-one solution for booking flights! This documentation provides comprehensive information on the robust backend system and its essential API endpoints designed to seamlessly integrate with your frontend applications.
+
+Explore the diverse functionalities offered by FlightHub API, from user registration and authentication to managing flights and bookings. Effortlessly build your airline reservation system with our user-friendly and efficient API.
+
+Let's dive into the details of the API endpoints:
+
+
+
 1. POST /users/api/register - Register a new user.
 2. POST /users/api/login - Login as an existing user.
 3. GET /flights/api/flights - Get all available flights.
